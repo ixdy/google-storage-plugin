@@ -31,6 +31,7 @@ public class StorageScopeRequirement extends GoogleOAuth2ScopeRequirement {
    */
   @Override
   public Collection<String> getScopes() {
-    return ImmutableList.of(StorageScopes.DEVSTORAGE_FULL_CONTROL);
+    return ImmutableList.of(StorageScopes.CLOUD_PLATFORM,
+        StorageScopes.DEVSTORAGE_FULL_CONTROL);
   }
 }
